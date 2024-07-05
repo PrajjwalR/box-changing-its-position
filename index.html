@@ -5,15 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Changing-Box</title>
     <style>
-      .container {
+      .main-container {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-flow: row;
       }
       .box {
         height: 100px;
         width: 100px;
         background: red;
+        border: 1px solid green;
+        padding: 20px;
+        margin: 10px;
+        cursor: pointer;
+      }
+
+      .third:hover {
+        cursor: alias;
+        height: 200px;
+        width: 200px;
+        transition-delay: 0.1s;
       }
     </style>
   </head>
@@ -21,7 +33,7 @@
     <div class="main-container">
       <div class="box">A</div>
       <div class="box">B</div>
-      <div class="box Third">C</div>
+      <div class="box third">C</div>
       <div class="box">D</div>
       <div class="box">E</div>
     </div>
